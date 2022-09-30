@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Yshakow_PR2INS"
         mc:Ignorable="d"
-        Title="Ушаков Сергей 402 Калькулятор" Height="450" Width="800">
-    <Grid>
-        
+        Title="Ушаков Сергей 402 Калькулятор" Height="426.223" Width="276.027">
+    <Grid x:Name="grid1" Margin="0,0,2,-21">
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="245" Height="44" Foreground="Black" x:Name="Textblock1" FontSize="20"/>
+        <Button Content="С" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="C" Click="C_Click"/>
+        <Button Content="&lt;-" HorizontalAlignment="Left" Margin="75,68,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKAYD1" Click="KNOPKAYD1_Click"/>
+        <Button Content="+/-" HorizontalAlignment="Left" Margin="140,68,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKAPL"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="205,68,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKAPLUS" Click="KNOPKAPLUS_Click"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKA7" Click="KNOPKA7_Click" />
+        <Button Content="8" HorizontalAlignment="Left" Margin="75,136,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKA8" Click="KNOPKA8_Click"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="140,136,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKA9" Click="KNOPKA9_Click"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="205,136,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKAMINYS" Click="KNOPKAMINYS_Click"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="205,202,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKAYMHOJ" Click="KNOPKAYMHOJ_Click"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="140,202,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKA6" Click="KNOPKA6_Click"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="75,202,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKA5" Click="KNOPKA5_Click"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKA4" Click="KNOPKA4_Click"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKA1" Click="KNOPKA1_Click"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="75,269,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKA2" Click="KNOPKA2_Click"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="140,269,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKA3" Click="KNOPKA3_Click"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="205,269,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKAPARDE" Click="KNOPKAPARDE_Click"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="140,334,0,0" VerticalAlignment="Top" Width="115" Height="50" x:Name="KNOPKARAVNO"/>
+        <Button Content="." HorizontalAlignment="Left" Margin="75,334,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKATOCHKA" Click="KNOPKATOCHKA_Click"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="10,334,0,0" VerticalAlignment="Top" Width="50" Height="50" x:Name="KNOPKA0" Click="KNOPKA0_Click"/>
+
+
+
     </Grid>
 </Window>
