@@ -82,7 +82,9 @@ namespace Wpf_Yshakow_PR2INS
 
         private void KNOPKATOCHKA_Click(object sender, RoutedEventArgs e)
         {
-            Textblock1.Text = Textblock1.Text + ".";
+            if (!Textblock1.Text.Contains(",")) {
+                Textblock1.Text += ",";
+            }
         }
 
         private void KNOPKAPARDE_Click(object sender, RoutedEventArgs e)
