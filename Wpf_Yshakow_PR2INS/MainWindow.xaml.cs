@@ -20,6 +20,11 @@ namespace Wpf_Yshakow_PR2INS
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private decimal valueFirst = 0.0m;
+        private decimal valuesecond = 0.0m;
+        private decimal Result = 0.0m;
+        private string operators = "+";
         public MainWindow()
         {
             InitializeComponent();
@@ -82,22 +87,30 @@ namespace Wpf_Yshakow_PR2INS
 
         private void KNOPKAPARDE_Click(object sender, RoutedEventArgs e)
         {
-            Textblock1.Text = Textblock1.Text + "/";
+            valueFirst = decimal.Parse(Textblock1.Text);
+            Textblock1.Text = "";
+            operators = "/";
         }
 
         private void KNOPKAYMHOJ_Click(object sender, RoutedEventArgs e)
         {
-            Textblock1.Text = Textblock1.Text + "*";
+            valueFirst = decimal.Parse(Textblock1.Text);
+            Textblock1.Text = "";
+            operators = "*";
         }
 
         private void KNOPKAMINYS_Click(object sender, RoutedEventArgs e)
         {
-            Textblock1.Text = Textblock1.Text + "-";
+            valueFirst = decimal.Parse(Textblock1.Text);
+            Textblock1.Text = "";
+            operators = "-";
         }
 
         private void KNOPKAPLUS_Click(object sender, RoutedEventArgs e)
         {
-            Textblock1.Text = Textblock1.Text + "+";
+            valueFirst = decimal.Parse(Textblock1.Text);
+            Textblock1.Text = "";
+            operators = "+";
         }
 
         private void C_Click(object sender, RoutedEventArgs e)
@@ -107,7 +120,44 @@ namespace Wpf_Yshakow_PR2INS
 
         private void KNOPKAYD1_Click(object sender, RoutedEventArgs e)
         {
+            Textblock1.Text = Textblock1.Text.Remove(Textblock1.Text.Length - 1) ;
+        }
 
+        private void KNOPKAPL_Click(object sender, RoutedEventArgs e)
+        {
+            if (Textblock1.Text.Contains("-")) {
+                Textblock1.Text = Textblock1.Text.Trim('-');
+            }
+            else
+            {
+                Textblock1.Text = "-" + Textblock1.Text;
+            }
+        }
+
+        private void KNOPKARAVNO_Click(object sender, RoutedEventArgs e)
+        {
+            switch (operators) {
+                case "-":
+                    valuesecond = decimal.Parse (Textblock1.Text);
+                    Result = valueFirst - valuesecond;
+                    Textblock1.Text = Result.ToString();
+                    break;
+                case "+":
+                    valuesecond = decimal.Parse(Textblock1.Text);
+                    Result = valueFirst + valuesecond;
+                    Textblock1.Text = Result.ToString();
+                    break;
+                case "*":
+                    valuesecond = decimal.Parse(Textblock1.Text);
+                    Result = valueFirst * valuesecond;
+                    Textblock1.Text = Result.ToString();
+                    break;
+                case "/":
+                    valuesecond = decimal.Parse(Textblock1.Text);
+                    Result = valueFirst / valuesecond;
+                    Textblock1.Text = Result.ToString();
+                    break;
+            }
         }
     }
 }
